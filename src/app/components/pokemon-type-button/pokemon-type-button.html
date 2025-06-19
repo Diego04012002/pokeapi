@@ -1,0 +1,10 @@
+<button
+  (click)="selectType(typeSelected)"
+  [class]="
+    'hover:transition-transform hover:scale-125 duration-300 uppercase text-xs font-bold w-fit h-[30px] rounded-2xl px-3 ' +
+    typeSelected.name +
+    (isSelected ? ' transition-transform scale-125 animate-bounce-pulse' : '')
+  "
+>
+  {{ typeSelected.name }}
+</button>
